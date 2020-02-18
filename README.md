@@ -1,6 +1,2 @@
-#include <stdio.h>
-
-int main()
-{
-  printf("Hello world~");
-}
+这里可以写什么呢？
+我不是很清楚，毕竟我是第一次使用它。
