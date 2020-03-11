@@ -1,0 +1,15 @@
+//自定义数据类型 typedef
+{
+  typedef int num;
+  num a = 0;
+}
+
+{
+  typedef struct{
+    int day;
+    int month;
+    int year;
+    }date;
+  
+  date a = {11, 03, 2020};
+}
