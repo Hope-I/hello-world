@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+	int n;
+	printf("请输入所求水仙花数的位数：\nn=");
+	scanf("%d",&n);
+	
+	int t = 1;//初始化遍历开始值 
+	int n1;
+	for (n1=1; n1<n; n1++){
+		t *= 10;
+	}
+	
+	int i;
+	for (i=t; i<t*10; i++){
+		int i1 = i;
+		int sum = 0;
+		do {
+			int cnt = i1%10;
+			i1 /=10;
+			int cnt1 = 1;
+			
+			int n2 = n;
+			while (n2 > 0){
+				cnt1 *= cnt;
+				n2 --;
+			}
+		sum += cnt1;		
+		}while (i1 > 0);
+		if (sum == i){
+			printf("%d\t",sum);
+		}
+		
+	}
+
+	return 0;
+}
